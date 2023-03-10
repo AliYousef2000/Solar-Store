@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+*{
+    font-family: "Poppins";
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: rgb(255, 174, 23);
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    max-height: 100px;
+    min-height: 100px;
+    box-shadow: 2px 3px 7px rgb(38, 0, 255);
+}
+
+.links ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    margin-right: 100px;
+    max-height: 100px;
+    min-height: 100px;
+}
+
+.logo img{
+    width: 100px;
+    height: 100px;
+    padding-left: 50px;
+}
+
+.nav-bar .links ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+.nav-bar .links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.nav-bar .links ul li:first-child{
+    background-color: rgb(36, 36, 255);
+    border-radius: 10px;
+}
+
+.nav-bar .links ul li:first-child a{
+    color: white;
+}
+
+/* Products section style */
+/* section visiblity */
+.products{
+    display: none;
+}
+/* section visiblity */
+.side-nav{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    width: 300px;
+    min-height: 100vh;
+    align-items: center;
+    background-color: rgb(255, 208, 0);
+}
+
+.side-nav ul{
+    height: fit-content;
+    width: 100%;
+}
+.side-nav ul li{
+    text-align: center;
+    list-style: none;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    width: 100%;
+}
+
+.side-nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 70px;
+    color: rgb(38, 0, 255);
+}
+/* Products section end */
+
+.main{
+    height: 90vh;
+    background-image: url("steamy2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
