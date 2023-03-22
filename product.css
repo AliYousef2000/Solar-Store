@@ -1,0 +1,346 @@
+html{
+    user-select: none;
+}
+*{
+    font-family: "Poppins";
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+.container{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8%;
+    background-color: rgb(26, 26, 26);
+    padding-left: 2%;
+    gap: 20%;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: yellow;
+    font-size: 20px;
+}
+
+.logo{
+    height: 100%;
+    width: 10%;
+}
+.logo img{
+    height: 100%;
+    object-fit: fill;
+}
+
+.main{
+    position: relative;
+    background-image: url("steamy2.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.selectcon {
+    height: 8%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.selectcon > #prodcat{
+    width: 20%;
+    height: 60%;
+    font-size: 25px;
+    text-align: center;
+    background-color: rgb(26, 26, 26);
+    color: yellow;
+}
+
+.prodview{
+    background-color: rgba(43, 42, 42, 0.75);
+    position: relative;
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    font-size: 25px;
+    overflow-y: scroll;
+}
+
+ .card{
+    background-color: rgb(236, 233, 233);
+    display: inline-block;
+    border-radius: 2%;
+    height: 50%;
+    width: 25%;
+    margin-left: 5%;
+    margin-top: 2%;
+    padding: 1%;
+}
+
+.image{
+    height: 60%;
+    width: 60%;
+    margin: auto;
+}
+.image > img{
+    width: 100%;
+    height: 100%;
+}
+.card > .title{
+    text-transform: capitalize;
+    padding-top: 1%;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+.card > .des{
+    padding-top: 1%;
+    font-size: 20px;
+    width: 100%;
+    height: 19%;
+    text-align: center;
+    border-top:2px solid;
+    border-bottom:2px solid ;
+}
+
+.card > .price{
+    text-align: center;
+    height: 9%;
+    font-size: 40px;
+}
+
+.image > img:hover{
+    scale: 1.015;
+}
+
+
+.foot{
+    width: 99.8%;
+    position: relative;
+    background-color: rgb(26, 26, 26);
+    color: yellow;
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-around;
+    align-self: auto;
+}
+
+.foot ul{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    font-size: 28px;
+}
+
+.foot ul li{
+    list-style: none;
+    font-size: 18px;
+}
+
+.foot ul li:first-child{
+    margin-top: 20px;
+}
+
+
+.foot ul li a{
+    text-decoration: none;
+    color: yellow;
+}
+
+.ultit{
+    text-decoration: underline;
+}
+
+
+  /* screen medias  */
+
+  /* phones media */
+  @media screen and (max-width:680px){
+    .main{
+        height: 70%;
+    }
+    .navbar{
+        gap: 0%;
+        height: 15%;
+        flex-direction: column;
+    }
+    .navbar > .logo{
+        height: 50%;
+        width: 50%;
+        margin-bottom: 0%;
+    }
+    .navbar > .logo > img{
+        height: 100%;
+        width: 100%;
+    }
+    .navbar > ul{
+        width: 100%;
+        height: 50%;
+        border-bottom: 1px solid white;
+        border-top: 1px solid white;
+    }
+    .navbar > ul > li > a{
+        font-size: 15px;
+    }
+
+
+    .content{
+        position: absolute;
+        max-width:80%;
+        /* background-color: blue; */
+        
+    }
+    .content > h1{
+        color: white;
+        font-size: 18px;
+    }
+    
+    .content > h1 >span{
+        font-size: 18px;
+    }
+    
+    .content > p{
+        color: white;
+        font-size: 14px;
+    }
+    .foot{
+        border: 2px solid rgb(255, 255, 255);
+        width: 99%;
+        position: relative;
+    }
+    
+    .foot  ul{
+        font-size: 13px;
+        max-width: 32%;
+        /* margin-left: 4%; */
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    
+    .foot  ul li{
+        
+        font-size: 7px;
+    }
+    
+    
+    .foot ul li a{
+        font-size: 7px;
+        word-wrap: break-word;
+    }
+
+    .main{
+        position: relative;
+        background-image: url("steamy2.jpg");
+        height: 120%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .selectcon {
+        height: 8%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .selectcon > #prodcat{
+        width: 50%;
+        height: 50%;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .prodview{
+        background-color: rgba(66, 65, 65, 0.75);
+        position: relative;
+        margin: auto;
+        width: 95%;
+        height: 90%;
+        font-size: 25px;
+        overflow-y: scroll;
+    }
+    
+     .card{
+        background-color: rgb(197, 197, 197);
+        display: inline-block;
+        border-radius: 2%;
+        height: 50%;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 2%;
+        padding: 1%;
+    }
+    
+    .image{
+        background-color: black;
+        height: 60%;
+        width: 60%;
+        margin: auto;
+    }
+    .image > img{
+        width: 100%;
+        height: 100%;
+    }
+    .card > .title{
+        text-transform: capitalize;
+        padding-top: 1%;
+        font-size: 20px;
+        width: 100%;
+        height: 10%;
+        text-align: center;
+        font-weight: bold;
+    }
+    .card > .des{
+        padding-top: 1%;
+        font-size: 15px;
+        width: 100%;
+        height: 19%;
+        text-align: center;
+        border-top:2px solid;
+        border-bottom:2px solid ;
+    }
+    
+    .card > .price{
+        text-align: center;
+        height: 9%;
+        padding-top: 2%;
+        font-size: 22px;
+    }
+    
+    .image > img:hover{
+        scale: 1.015;
+    }
+    
+
+
+  }
+  /* end */
+
